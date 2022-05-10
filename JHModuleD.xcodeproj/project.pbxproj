@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		848AD0BA282A6A5A00F9C019 /* JHModuleD.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD0B9282A6A5A00F9C019 /* JHModuleD.m */; };
 		848AD0BB282A6A5A00F9C019 /* JHModuleD.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848AD0B8282A6A5A00F9C019 /* JHModuleD.h */; };
+		848AD0C5282A6C8900F9C019 /* JHModuleD_One.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD0C4282A6C8900F9C019 /* JHModuleD_One.m */; };
+		848AD0C8282A6C9400F9C019 /* JHModuleD_Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */; };
+		848AD0C9282A6CB400F9C019 /* JHModuleD_One.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848AD0C3282A6C8900F9C019 /* JHModuleD_One.h */; };
+		848AD0CA282A6CB700F9C019 /* JHModuleD_Two.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -18,6 +22,8 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
+				848AD0CA282A6CB700F9C019 /* JHModuleD_Two.h in CopyFiles */,
+				848AD0C9282A6CB400F9C019 /* JHModuleD_One.h in CopyFiles */,
 				848AD0BB282A6A5A00F9C019 /* JHModuleD.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -28,6 +34,10 @@
 		848AD0B5282A6A5A00F9C019 /* libJHModuleD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJHModuleD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		848AD0B8282A6A5A00F9C019 /* JHModuleD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHModuleD.h; sourceTree = "<group>"; };
 		848AD0B9282A6A5A00F9C019 /* JHModuleD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD.m; sourceTree = "<group>"; };
+		848AD0C3282A6C8900F9C019 /* JHModuleD_One.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHModuleD_One.h; sourceTree = "<group>"; };
+		848AD0C4282A6C8900F9C019 /* JHModuleD_One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD_One.m; sourceTree = "<group>"; };
+		848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHModuleD_Two.h; sourceTree = "<group>"; };
+		848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD_Two.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,8 +72,28 @@
 			children = (
 				848AD0B8282A6A5A00F9C019 /* JHModuleD.h */,
 				848AD0B9282A6A5A00F9C019 /* JHModuleD.m */,
+				848AD0C2282A6C6F00F9C019 /* TestTwo */,
+				848AD0C1282A6C6100F9C019 /* TestOne */,
 			);
 			path = JHModuleD;
+			sourceTree = "<group>";
+		};
+		848AD0C1282A6C6100F9C019 /* TestOne */ = {
+			isa = PBXGroup;
+			children = (
+				848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */,
+				848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */,
+			);
+			path = TestOne;
+			sourceTree = "<group>";
+		};
+		848AD0C2282A6C6F00F9C019 /* TestTwo */ = {
+			isa = PBXGroup;
+			children = (
+				848AD0C3282A6C8900F9C019 /* JHModuleD_One.h */,
+				848AD0C4282A6C8900F9C019 /* JHModuleD_One.m */,
+			);
+			path = TestTwo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +154,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				848AD0BA282A6A5A00F9C019 /* JHModuleD.m in Sources */,
+				848AD0C5282A6C8900F9C019 /* JHModuleD_One.m in Sources */,
+				848AD0C8282A6C9400F9C019 /* JHModuleD_Two.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,7 +279,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3Z9Q6LHF3;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -259,7 +294,10 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = H3Z9Q6LHF3;
-				OTHER_LDFLAGS = "-ObjC";
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
