@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
   
-  s.source_files = 'JHModuleD/JHModuleD/**/*.{h,m}'
+  s.source_files = 'JHModuleD/**/*.{h,m}'
 
   # s.vendored_libraries = ['JHModuleD_Lib/libJHModuleD.a']
   # s.source_files = 'JHModuleD/JHModuleD/**/*.h'
