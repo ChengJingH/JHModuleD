@@ -13,6 +13,7 @@
 		848AD0C8282A6C9400F9C019 /* JHModuleD_Two.m in Sources */ = {isa = PBXBuildFile; fileRef = 848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */; };
 		848AD0C9282A6CB400F9C019 /* JHModuleD_One.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848AD0C3282A6C8900F9C019 /* JHModuleD_One.h */; };
 		848AD0CA282A6CB700F9C019 /* JHModuleD_Two.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */; };
+		84F788E52832008400B0FFFD /* JHModuleD_Three.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F788E42832008400B0FFFD /* JHModuleD_Three.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		848AD0C4282A6C8900F9C019 /* JHModuleD_One.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD_One.m; sourceTree = "<group>"; };
 		848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHModuleD_Two.h; sourceTree = "<group>"; };
 		848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD_Two.m; sourceTree = "<group>"; };
+		84F788E32832008400B0FFFD /* JHModuleD_Three.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JHModuleD_Three.h; sourceTree = "<group>"; };
+		84F788E42832008400B0FFFD /* JHModuleD_Three.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JHModuleD_Three.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +86,8 @@
 			children = (
 				848AD0C6282A6C9400F9C019 /* JHModuleD_Two.h */,
 				848AD0C7282A6C9400F9C019 /* JHModuleD_Two.m */,
+				84F788E32832008400B0FFFD /* JHModuleD_Three.h */,
+				84F788E42832008400B0FFFD /* JHModuleD_Three.m */,
 			);
 			path = TestOne;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				848AD0BA282A6A5A00F9C019 /* JHModuleD.m in Sources */,
 				848AD0C5282A6C8900F9C019 /* JHModuleD_One.m in Sources */,
 				848AD0C8282A6C9400F9C019 /* JHModuleD_Two.m in Sources */,
+				84F788E52832008400B0FFFD /* JHModuleD_Three.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
